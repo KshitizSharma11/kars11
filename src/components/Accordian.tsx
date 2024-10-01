@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
-import { FaLock, FaArrowCircleDown, FaArrowCircleUp } from 'react-icons/fa';
-
+import { FaLock, FaDollarSign , FaUser } from 'react-icons/fa';
+import { FiChevronUp, FiChevronDown } from 'react-icons/fi';
 const Accordion = () => {
     const accordionData = [
         {
@@ -11,13 +11,13 @@ const Accordion = () => {
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius reiciendis iusto suscipit officia sit modi magnam, libero quasi, beatae adipisci soluta, tempore unde. Placeat odio laudantium obcaecati dolor commodi."
         },
         {
-            icon: FaLock,
+            icon: FaDollarSign,
             heading: 'Financial Security.',
             paragraph:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius reiciendis iusto suscipit officia sit modi magnam, libero quasi, beatae adipisci soluta, tempore unde. Placeat odio laudantium obcaecati dolor commodi."
         },
         {
-            icon: FaLock,
+            icon: FaUser,
             heading: 'Customer Satisfaction.',
             paragraph:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius reiciendis iusto suscipit officia sit modi magnam, libero quasi, beatae adipisci soluta, tempore unde. Placeat odio laudantium obcaecati dolor commodi."
@@ -45,9 +45,9 @@ const Accordion = () => {
 
                             <button onClick={() => handleClick(index)} className="cursor-pointer">
                                 {activeIndex === index ? (
-                                    <FaArrowCircleUp size={30} color={'#f97316'} />
+                                    <FiChevronUp size={30} color={'blue'} />
                                 ) : (
-                                    <FaArrowCircleDown size={30} color={'#f97316'} />
+                                    <FiChevronDown size={30} color={'black'} />
                                 )}
                             </button>
                         </div>
