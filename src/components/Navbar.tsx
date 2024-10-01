@@ -12,8 +12,9 @@ const Navbar = () => {
 
         </li>
         <li>
+        <Link href="/Cars">
             <h1 className='text-white  hover:underline underline-offset-4 underline-[#008dda] decoration-4 decoration-[#008dda]'>Cars</h1>
-            
+            </Link>
         </li>
         <li>
             <h1 className='text-white  hover:underline underline-offset-4 underline-[#008dda] decoration-4 decoration-[#008dda]'>Bookings</h1>

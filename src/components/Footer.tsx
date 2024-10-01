@@ -2,7 +2,7 @@ import React from 'react'
 import { FaInstagram, FaFacebook ,FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt  } from 'react-icons/fa'
 const Footer = () => {
   return (
-    <div className='bg-[#184077] p-4 text-gray-50 hidden lg:block'>
+    <div className='bg-[#184077] p-4 text-gray-50 hidden lg:block '>
     {/* For desktop footer */}
      <div className='flex flex-row  mx-24 py-20 justify-between'>
         <div className='space-y-4'>
