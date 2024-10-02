@@ -5,7 +5,7 @@ import Safety from '@/components/Safety';
 export default function Home() {
   return (
     <>
-    <div className=" bg-gradient-to-b from-[#2d4067] to-[#717ea0]">
+    <div className=" bg-gradient-to-b from-[#184077] to-[#717ea0]">
       <Hero />
       
     </div>
