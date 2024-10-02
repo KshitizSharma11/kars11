@@ -24,7 +24,7 @@ const Navbar = () => {
  
   return (
    
-    <div className="flex flex-row items-center justify-between p-6 bg-[#184077] shadow-md text-2xl font-medium px-10">
+    <div className="fixed top-0 z-50 w-full flex flex-row items-center justify-between py-4 bg-[#184077]  shadow-md text-xl font-medium px-10">
       
       <div className="w-[1/3] text-4xl font-semibold ml-6">
         <span className="text-orange-400">Kars</span>
