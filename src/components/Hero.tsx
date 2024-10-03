@@ -1,5 +1,5 @@
 import React from 'react';
-import Enquiry from './Enquiry';
+import Enquiry from './molecules/Enquiry';
 const Hero = () => {
   return (
     <div className='min-h-[100vh] rounded-t-full shadow-[0_0_15px_15px_rgba(256,256,256,0.6)] flex flex-col items-center px-6'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Enquiry from '@/components/Enquiry'
+import Enquiry from '@/components/molecules/Enquiry'
 
 const Cars = () => {
     const carData=[{

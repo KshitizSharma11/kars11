@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from "@/components/Hero";
-import Working from '@/components/Working';
-import Safety from '@/components/Safety';
+import Working from '@/components/atoms/Working';
+import Safety from '@/components/atoms/Safety';
 export default function Home() {
   return (
     <>
