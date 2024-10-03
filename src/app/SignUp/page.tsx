@@ -1,11 +1,12 @@
-import React from "react";
-import { FaGoogle,FaFacebook } from "react-icons/fa";
+import React from 'react'
 import Banner from '@/components/atoms/Banner'
+import { FaGoogle, FaFacebook } from 'react-icons/fa'
 const page = () => {
   return (
-    <div className="flex flex-col">
-      <Banner url='https://wallpapers.com/images/hd/ultra-wide-4k-car-xkxr4j3eotg26a22.jpg'  height={40} />
-      <div className="flex flex-row items-center justify-between my-[5%] mx-[15%]">
+    <div>
+        <Banner url='https://wallpapers.com/images/hd/ultra-wide-4k-car-xkxr4j3eotg26a22.jpg'  height={40} />
+        
+        <div className="flex flex-row items-center justify-between my-[5%] mx-[10%]">
         <div className="w-[50%]">
           <img
             src="https://img.freepik.com/premium-photo/best-car-wallpapers_1151350-19726.jpg"
@@ -14,25 +15,45 @@ const page = () => {
         </div>
         <div className="w-[45%] flex-col justify-center  items-center">
           <div className="space-y-4">
-            <h1 className="text-4xl text-black font-bold">Login</h1>
+            <h1 className="text-4xl text-black font-bold">Sign Up</h1>
             <p className="text-lg text-gray-400">
-              Welcome Back To The Universe Of Exotic Cars.
+              Find Your Ideal Deal With Kars11.
             </p>
           </div>
           <div>
             <form className="space-y-4 mt-4">
+                <div className='flex gap-4'>
+              <input
+                type="text"
+                placeholder="Name"
+                className="p-4 w-full  rounded-lg border-2 border-gray-400"
+                />
               <input
                 type="text"
                 placeholder="Email"
-                className="p-4 w-full rounded-lg border-2 border-gray-400"
-              />
+                className="p-4 w-full  rounded-lg border-2 border-gray-400"
+                />
+                </div>
+                <div className='flex gap-4'>
+
+              <input
+                type="text"
+                placeholder="Phone Number"
+                className="p-4 w-full  rounded-lg border-2 border-gray-400"
+                />
               <input
                 type="password"
                 placeholder="Password"
+                className="p-4  w-full  rounded-lg border-2 border-gray-400"
+                />
+                </div>
+              <input
+                type="password"
+                placeholder="Confirm Password"
                 className="p-4 mt-4 w-full rounded-lg border-2 border-gray-400"
               />
               <button className="w-full p-4 text-white bg-black rounded-lg hover:bg-orange-400">
-                Login
+                Create 
               </button>
               <div className="flex justify-center mt-4">
                 <a href="#" className="text-blue-500">
@@ -53,7 +74,7 @@ const page = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default page
