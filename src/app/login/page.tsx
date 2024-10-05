@@ -44,9 +44,9 @@ const page = () => {
                 <span className="text-gray-500 text-lg">OR</span>
                 <span className="border-t border-gray-400 flex-grow ml-1"></span>
               </div>
-              <div className="mx-[30%] flex flex-row items-center justify-between mt-4">
-               <FaGoogle size={64} className="p-4 bg-black text-white hover:bg-orange-500 cursor-pointer"/>
-               <FaFacebook size={64} className="p-4 bg-black text-white hover:bg-orange-500 cursor-pointer"/>
+              <div className=" flex flex-row items-center justify-center gap-8 mt-4">
+               <FaGoogle size={64} className="p-4 w-[1/2] rounded-lg bg-black text-white hover:bg-orange-500 cursor-pointer"/>
+               <FaFacebook size={64} className="p-4 w-[1/2] rounded-lg bg-black text-white hover:bg-orange-500 cursor-pointer"/>
               </div>
             </form>
           </div>
