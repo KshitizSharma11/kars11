@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { FaGoogle, FaFacebook } from 'react-icons/fa';
-import { handleFacebookLogin, handleGoogleLogin, handleEmailLogin } from "@/utils/loginServiceFunctions";
+import { handleFacebookLogin, handleGoogleLogin, signInWithEmail, } from "@/utils/loginServiceFunctions";
 import Banner from '@/components/atoms/Banner';
 
 const Page = () => {
@@ -10,7 +10,7 @@ const Page = () => {
 
   const handleLoginSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    await handleEmailLogin(email, password);
+    await signInWithEmail(email, password);
   };
 
   const handleGoogleButtonClick = async (e: { preventDefault: () => void; }) => {

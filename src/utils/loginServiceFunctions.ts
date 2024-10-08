@@ -15,15 +15,21 @@ export const handleGoogleLogin = async () => {
 }
 
 
-export const handleEmailLogin = async (email:string, password:string) => {
-  const { user, error } = await supabase.auth.signInWithIdToken({
+export async function signInWithEmail(email:string,password:string) {
+  const { data, error } = await supabase.auth.signUp({
     email: email,
     password: password,
-  });
-
+    options: {
+      emailRedirectTo: 'https://localhost:3000/',
+    },
+  })
   if (error) {
-    console.error('Error logging in with email/password:', error.message);
-  } else {
-    console.log('Logged in user:', user);
+    console.error('Error signing up:', error.message)
+    throw error
   }
-};
+  else{
+    console.log('User signed up successfully:', data)
+  }
+
+}
+
